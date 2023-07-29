@@ -1,0 +1,22 @@
+Widget Box_shadow(){
+return Container(
+  width: 200,
+  height: 200,
+  decoration: const BoxDecoration(
+    boxShadow: [
+      BoxShadow(
+        color: Colors.amber,
+        blurRadius: 25.0,
+        spreadRadius: 25,
+        offset: Offset(
+          -20,
+          -20,
+        ),
+      )
+    ],
+  ),
+  child: Container(
+    color: Colors.red,
+  ),
+);
+}
